@@ -1,0 +1,7 @@
+---
+title: "Why Water?"
+format: html
+page-layout: full
+---
+
+##### This page will include a memo about how I gained interest in my majors/ career paths, and how I am applying what I am learning in the classroom to the broader fields of geography and hydrology.
