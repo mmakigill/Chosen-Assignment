@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "education.html",
+    "href": "education.html",
+    "title": "Resume",
+    "section": "",
+    "text": "This page will feature my resume, including academic achievements and work/relevant experience."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Hello!\nWelcome to my website! My name is Marissa Gill and I am a second-year student at the University of California, Santa Barbara. I am currently pursuing degrees in both Hydrologic Science and Policy, and Geography with an Emphasis in Geographic Information Systems (GIS)."
+  },
+  {
+    "objectID": "whywater.html",
+    "href": "whywater.html",
+    "title": "Why Water?",
+    "section": "",
+    "text": "This page will include a memo about how I gained interest in my majors/ career paths, and how I am applying what I am learning in the classroom to the broader fields of geography and hydrology."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "This page will highlight signifcant projects I have completed throughout my education in different classes."
+  },
+  {
+    "objectID": "projects.html#coastal-erosion-and-impervious-surface",
+    "href": "projects.html#coastal-erosion-and-impervious-surface",
+    "title": "Projects",
+    "section": "Coastal Erosion and Impervious Surface",
+    "text": "Coastal Erosion and Impervious Surface"
+  },
+  {
+    "objectID": "projects.html#mission-creek-watershed-dilineation",
+    "href": "projects.html#mission-creek-watershed-dilineation",
+    "title": "Projects",
+    "section": "Mission Creek Watershed Dilineation",
+    "text": "Mission Creek Watershed Dilineation"
+  },
+  {
+    "objectID": "projects.html#the-water-footprint-of-our-dietary-choices",
+    "href": "projects.html#the-water-footprint-of-our-dietary-choices",
+    "title": "Projects",
+    "section": "The Water Footprint of Our Dietary Choices",
+    "text": "The Water Footprint of Our Dietary Choices\nThis section will include my research about the water footprint of each meal I eat, with code for a histogram and the output, and writing about what the experiment entails."
+  },
+  {
+    "objectID": "projects.html#community-perception-of-water-quality-and-water-management",
+    "href": "projects.html#community-perception-of-water-quality-and-water-management",
+    "title": "Projects",
+    "section": "Community Perception of Water Quality and Water Management",
+    "text": "Community Perception of Water Quality and Water Management"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "This page will include an about me with my interests, hobbies, extracurriculars, and skills."
+  }
+]
