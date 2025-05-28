@@ -14,46 +14,11 @@
     "text": "This page will include an about me with my interests, hobbies, extracurriculars, and skills."
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "This is the Projects page."
-  },
-  {
     "objectID": "education.html",
     "href": "education.html",
     "title": "Resume",
     "section": "",
     "text": "This page will feature my resume, including academic achievements and work/relevant experience."
-  },
-  {
-    "objectID": "projects.html#coastal-erosion-and-impervious-surface",
-    "href": "projects.html#coastal-erosion-and-impervious-surface",
-    "title": "Projects",
-    "section": "Coastal Erosion and Impervious Surface",
-    "text": "Coastal Erosion and Impervious Surface"
-  },
-  {
-    "objectID": "projects.html#mission-creek-watershed-dileneation",
-    "href": "projects.html#mission-creek-watershed-dileneation",
-    "title": "Projects",
-    "section": "Mission Creek Watershed Dileneation",
-    "text": "Mission Creek Watershed Dileneation"
-  },
-  {
-    "objectID": "projects.html#the-water-footprint-of-our-dietary-choices-case-study",
-    "href": "projects.html#the-water-footprint-of-our-dietary-choices-case-study",
-    "title": "Projects",
-    "section": "The Water Footprint of Our Dietary Choices Case Study",
-    "text": "The Water Footprint of Our Dietary Choices Case Study"
-  },
-  {
-    "objectID": "projects.html#community-perception-of-water-quality-and-water-management",
-    "href": "projects.html#community-perception-of-water-quality-and-water-management",
-    "title": "Projects",
-    "section": "Community Perception of Water Quality and Water Management",
-    "text": "Community Perception of Water Quality and Water Management"
   },
   {
     "objectID": "whywater.html",
@@ -63,10 +28,38 @@
     "text": "This page will include a memo about how I gained interest in my majors/ career paths, and how I am applying what I am learning in the classroom to the broader fields of geography and hydrology."
   },
   {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "This page will highlight signifcant projects I have completed throughout my education in different classes."
+  },
+  {
+    "objectID": "projects.html#coastal-erosion-and-impervious-surface",
+    "href": "projects.html#coastal-erosion-and-impervious-surface",
+    "title": "Projects",
+    "section": "Coastal Erosion and Impervious Surface",
+    "text": "Coastal Erosion and Impervious Surface"
+  },
+  {
+    "objectID": "projects.html#mission-creek-watershed-dilineation",
+    "href": "projects.html#mission-creek-watershed-dilineation",
+    "title": "Projects",
+    "section": "Mission Creek Watershed Dilineation",
+    "text": "Mission Creek Watershed Dilineation"
+  },
+  {
     "objectID": "projects.html#the-water-footprint-of-our-dietary-choices",
     "href": "projects.html#the-water-footprint-of-our-dietary-choices",
     "title": "Projects",
     "section": "The Water Footprint of Our Dietary Choices",
     "text": "The Water Footprint of Our Dietary Choices\nThis section will include my research about the water footprint of each meal I eat, with code for a histogram and the output, and writing about what the experiment entails."
+  },
+  {
+    "objectID": "projects.html#community-perception-of-water-quality-and-water-management",
+    "href": "projects.html#community-perception-of-water-quality-and-water-management",
+    "title": "Projects",
+    "section": "Community Perception of Water Quality and Water Management",
+    "text": "Community Perception of Water Quality and Water Management"
   }
 ]
