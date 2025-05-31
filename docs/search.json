@@ -32,7 +32,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "This page will highlight signifcant projects I have completed throughout my education in different classes."
+    "text": "This page will highlight signifcant projects I have completed throughout my education in different classes.\n\n\n\n\n\n\n\n\n\n\n\n\nDATA_SCI\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGIS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQUAL_REAS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects.html#coastal-erosion-and-impervious-surface",
@@ -61,5 +61,26 @@
     "title": "Projects",
     "section": "Community Perception of Water Quality and Water Management",
     "text": "Community Perception of Water Quality and Water Management"
+  },
+  {
+    "objectID": "posts/QUAL_REAS.html",
+    "href": "posts/QUAL_REAS.html",
+    "title": "QUAL_REAS",
+    "section": "",
+    "text": "Qualitative Research\nCommunity Perception of Water Quality and Water Management"
+  },
+  {
+    "objectID": "posts/GIS.html",
+    "href": "posts/GIS.html",
+    "title": "GIS",
+    "section": "",
+    "text": "GIS Portfolio\nCoastal Erosion and Impervious Surface\nMission Creek Watershed Dilineation"
+  },
+  {
+    "objectID": "posts/DATA_SCI.html",
+    "href": "posts/DATA_SCI.html",
+    "title": "DATA_SCI",
+    "section": "",
+    "text": "Data Science\nThe Water Footprint of Our Dietary Choices\nThis section will include my research about the water footprint of each meal I eat, with code for a histogram and the output, and writing about what the experiment entails."
   }
 ]

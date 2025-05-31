@@ -13,5 +13,14 @@
   },
   "whywater.qmd": {
     "whywater.html": "cc59abc7"
+  },
+  "posts/GIS.qmd": {
+    "GIS.html": "5eb91da6"
+  },
+  "posts/QUAL_REAS.qmd": {
+    "QUAL_REAS.html": "581e8dda"
+  },
+  "posts/DATA_SCI.qmd": {
+    "DATA_SCI.html": "c612920e"
   }
 }
