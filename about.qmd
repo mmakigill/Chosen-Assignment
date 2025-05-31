@@ -1,8 +1,11 @@
 ---
 title: "About"
-format:
-  html:
-    theme: jolla
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com
 ---
 
 ---

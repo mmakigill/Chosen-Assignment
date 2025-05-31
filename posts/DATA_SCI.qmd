@@ -1,0 +1,10 @@
+---
+title: "DATA_SCI"
+format: html
+---
+
+Data Science
+
+The Water Footprint of Our Dietary Choices
+
+This section will include my research about the water footprint of each meal I eat, with code for a histogram and the output, and writing about what the experiment entails.
