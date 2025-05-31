@@ -1,6 +1,10 @@
 ---
-title: "About Me"
-page-layout: full
+title: "About"
+format:
+  html:
+    theme: jolla
+---
+
 ---
 
 #### This page will include an about me with my interests, hobbies, extracurriculars, and skills.
