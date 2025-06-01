@@ -4,6 +4,6 @@ format: html
 page-layout: full
 ---
 
-This page will feature my resume, including academic achievements and work/relevant experience.
+([Download My Resume Here](Resume.pdf){.btn .btn-primary} )
 
 ![](images/Resume.png)

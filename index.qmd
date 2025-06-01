@@ -5,4 +5,6 @@ page-layout: full
 
 # Hello!
 
+<p><a href="mailto:hspmarissagrace@gmail.com">📧 hspmarissagrace\@gmail.com</a><br> <a href="https://www.linkedin.com/in/marissa-gill-006231369/" target="_blank">🔗 LinkedIn Profile</a></p>
+
 Welcome to my website! My name is Marissa Gill and I am a second-year student at the University of California, Santa Barbara. I am currently pursuing degrees in both Hydrologic Science and Policy, and Geography with an Emphasis in Geographic Information Systems (GIS).
