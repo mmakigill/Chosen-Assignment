@@ -1,7 +1,7 @@
 /* css styles */
 iframe {
   max-width: 100%;
-  max-height: 1000px;
+  max-height: 400px;
   overflow: hidden;
   display: block;
 }
@@ -14,3 +14,12 @@ iframe {
   height: 100%;
   border: 0;
 }
+
+.responsive-iframe {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
