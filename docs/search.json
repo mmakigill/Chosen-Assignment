@@ -74,7 +74,7 @@
     "href": "posts/GIS.html",
     "title": "GIS Portfolio",
     "section": "",
-    "text": "GIS Portfolio\nCoastal Erosion and Impervious Surface\nMission Creek Watershed Dileneation\n&lt;div style=\"width: 800px; height: 600px;\"&gt;\n  &lt;iframe \n    src=\"https://storymaps.arcgis.com/stories/32f44c8c295a409c8da2746421e5bbff\"\n    width=\"100%\" \n    height=\"100%\" \n    style=\"border:0;\" \n    allowfullscreen \n    allow=\"geolocation\"&gt;\n  &lt;/iframe&gt;\n&lt;/div&gt;"
+    "text": "```html"
   },
   {
     "objectID": "posts/DATA_SCI.html",
