@@ -82,5 +82,12 @@
     "title": "Data Science Portfolio",
     "section": "",
     "text": "Data Science\nThe Water Footprint of Our Dietary Choices\nThis section will include my research about the water footprint of each meal I eat, with code for a histogram and the output, and writing about what the experiment entails."
+  },
+  {
+    "objectID": "posts/GIS.html#mission-creek-watershed-delineation",
+    "href": "posts/GIS.html#mission-creek-watershed-delineation",
+    "title": "GIS Portfolio",
+    "section": "Mission Creek Watershed Delineation",
+    "text": "Mission Creek Watershed Delineation"
   }
 ]

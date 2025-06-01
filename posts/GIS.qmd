@@ -3,11 +3,7 @@ title: "GIS Portfolio"
 format: html
 ---
 
-# GIS Portfolio
-
 ## Coastal Erosion and Impervious Surface
-
-## Mission Creek Watershed Delineation
 
 ```{=html}
 <div style="width: 800px; height: 600px;">
@@ -22,4 +18,5 @@ format: html
 </div>
 ```
 
+## Mission Creek Watershed Delineation
 
