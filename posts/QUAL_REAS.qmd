@@ -1,5 +1,5 @@
 ---
-title: "QUAL_REAS"
+title: "Qualitative Research"
 format: html
 ---
 
