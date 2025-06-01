@@ -23,6 +23,7 @@ website:
 format:
   html:
     theme: minty
+    fontawesome: true
     css: styles.css
     toc: true
 

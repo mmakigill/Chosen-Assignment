@@ -3,9 +3,12 @@ title: "About"
 about:
   template: jolla
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com
+    - icon: Email
+      text: Contact Me
+      href: "mailto:hspmarissagrace@gmail.com"
+    - icon: LinkedIn
+      text: LinkedIn Profile
+      href: "https://www.linkedin.com/in/marissa-gill-006231369/"
 ---
 
 ------------------------------------------------------------------------

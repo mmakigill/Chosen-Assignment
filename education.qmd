@@ -4,6 +4,6 @@ format: html
 page-layout: full
 ---
 
-([Download My Resume Here](Resume.pdf){.btn .btn-primary} )
+[Download My Resume Here](Resume.pdf){.btn .btn-primary}
 
 ![](images/Resume.png)
