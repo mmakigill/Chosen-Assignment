@@ -23,3 +23,8 @@ iframe {
   max-width: 100%;
 }
 
+.navbar-brand img {
+  max-height: 100px !important; /* Adjust to desired height */
+  height: auto;
+  width: auto;
+}

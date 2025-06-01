@@ -5,6 +5,7 @@ project:
 website:
   title: "Marissa Gill"
   navbar:
+    logo: images/Marissa_Logo.png
     background: secondary
     right:
       - href: index.qmd
