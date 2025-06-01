@@ -3,9 +3,11 @@ title: "GIS Portfolio"
 format: html
 ---
 
-## Coastal Erosion and Impervious Surface
 
-```{=html}
+# Coastal Erosion and Impervious Surface
+
+
+
 <div style="width: 800px; height: 600px;">
   <iframe 
     src="https://storymaps.arcgis.com/stories/32f44c8c295a409c8da2746421e5bbff"
@@ -16,7 +18,7 @@ format: html
     allow="geolocation">
   </iframe>
 </div>
-```
+
 
 ## Mission Creek Watershed Delineation
 
