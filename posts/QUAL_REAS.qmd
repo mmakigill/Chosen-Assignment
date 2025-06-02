@@ -4,10 +4,22 @@ format: html
 page-layout: full
 ---
 
+<!--more-->
+
+
+
 ### Personal Study on the Isla Vista Community's Perception of Water Quality and Water Management
 
 <iframe src="ENVS102_Research_Paper.pdf" width="100%" height="800px" style="border:none;">
 
-This browser does not support PDFs. Please download the PDF to view it: <a href="Resume.pdf">Download PDF</a>
+This browser does not support PDFs. Please download the PDF to view it: <a href="ENVS102_Research_Paper.pdf">Download PDF</a>
+
+</iframe>
+
+#### Custom Code Book
+
+<iframe src="Qual_Research_Code_Book.pdf" width="100%" height="800px" style="border:none;">
+
+This browser does not support PDFs. Please download the PDF to view it: <a href="Qual_Research_Code_Book.pdf">Download PDF</a>
 
 </iframe>
