@@ -8,6 +8,10 @@ page-layout: full
 
 
 
+
+
+
+
 ### Personal Study on the Isla Vista Community's Perception of Water Quality and Water Management
 
 <iframe src="ENVS102_Research_Paper.pdf" width="100%" height="800px" style="border:none;">

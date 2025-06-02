@@ -33,7 +33,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -119,47 +118,49 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+  <ul>
+  <li><a href="#welcome-to-my-website" id="toc-welcome-to-my-website" class="nav-link active" data-scroll-target="#welcome-to-my-website">Welcome to My Website</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-about-solana column-body">
+  <div class="about-entity">
+    <div class="entity-contents">
+      <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Home</h1>
 </div>
-
-
-
-<div class="quarto-title-meta column-page">
-
-    
-  
-    
+<div class="quarto-title-meta">
   </div>
-  
-
-
-</header>
-
-
-<div class="container">
-<div class="profile-container">
-<img src="images/profile_pic.jpg" class="circular-img" width="200px" alt="Profile photo">
-<div>
-<pre><code>Welcome to my website! My name is Marissa Gill and I am an undergraduate student at the University of California, Santa Barbara.  
-I am currently pursuing degrees in both Hydrologic Science and Policy, and Geography with an Emphasis in Geographic Information Systems (GIS).</code></pre>
+</header> <div class="about-links">
+  <a href="mailto:hspmarissagrace@gmail.com" class="about-link" rel="" target="">
+    <i class="bi bi-inbox"></i>
+     <span class="about-link-text">Contact Me</span>
+  </a>
+  <a href="https://www.linkedin.com/in/marissa-gill-006231369/" class="about-link" rel="" target="">
+    <i class="bi bi-linkedin"></i>
+     <span class="about-link-text">LinkedIn Profile</span>
+  </a>
+  <a href="https://github.com/mmakigill" class="about-link" rel="" target="">
+    <i class="bi bi-github"></i>
+     <span class="about-link-text">Github</span>
+  </a>
 </div>
-</div>
+      <div class="about-contents"><main class="content" id="quarto-document-content">
+
+<p>Welcome to my website! My name is Marissa Gill and I am an undergraduate student at the University of California, Santa Barbara. I am currently pursuing degrees in both Hydrologic Science and Policy, and Geography with an Emphasis in Geographic Information Systems (GIS).</p>
 <section id="welcome-to-my-website" class="level1 {=html}">
 <h1>Welcome to My Website</h1>
 <div class="cards-grid">
 <div class="card">
-<h3 class="anchored" data-anchor-id="welcome-to-my-website">
+<h3 data-anchor-id="welcome-to-my-website">
 📚 Projects
 </h3>
 <p>
@@ -168,7 +169,7 @@ See my GIS and water policy work.
 <p><a href="./projects.html">View Projects</a></p>
 </div>
 <div class="card">
-<h3 class="anchored">
+<h3>
 🌊 Why Water?
 </h3>
 <p>
@@ -177,7 +178,7 @@ Learn why I study hydrology and surface water.
 <p><a href="./whywater.html">Read More Here</a></p>
 </div>
 <div class="card">
-<h3 class="anchored">
+<h3>
 🎓 Education and Experience
 </h3>
 <p>
@@ -186,7 +187,7 @@ My academic background and coursework.
 <p><a href="./education.html">See Experience</a></p>
 </div>
 <div class="card">
-<h3 class="anchored">
+<h3>
 About Me
 </h3>
 <p>
@@ -200,9 +201,13 @@ See my GIS and water policy work.
 </div>
 </div>
 </section>
+</main></div>
+    </div>
+    <img src="images/profile_pic.jpg" class="about-image
+  round " style="height: 20em; width: 20em;">
+  </div>
 </div>
-
-</main> <!-- /main -->
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -223,13 +228,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

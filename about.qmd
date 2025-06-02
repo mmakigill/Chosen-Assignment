@@ -2,13 +2,6 @@
 title: "About"
 about:
   template: jolla
-  links:
-    - icon: Email
-      text: Contact Me
-      href: "mailto:hspmarissagrace@gmail.com"
-    - icon: LinkedIn
-      text: LinkedIn Profile
-      href: "https://www.linkedin.com/in/marissa-gill-006231369/"
 ---
 
 ------------------------------------------------------------------------
@@ -16,4 +9,3 @@ about:
 ## About Me
 
 My academic interests include water policy and management and the application of GIS to solve real-world environmental issues. I’m currently working on a project that maps climate change impacts on groundwater aquifers across California. I'm also gaining hands-on experience with tools like ArcGIS, QGIS, R, and Python.
-

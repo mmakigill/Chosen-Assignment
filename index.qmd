@@ -1,16 +1,26 @@
 ---
 title: "Home"
-page-layout: full
+image: images/profile_pic.jpg
+theme: 
+  - style.css
+
+about:
+  template: solana
+  image-shape: round
+  image-width: 20em
+  links:
+    - icon: inbox
+      text: Contact Me
+      href: "mailto:hspmarissagrace@gmail.com"
+    - icon: linkedin
+      text: LinkedIn Profile
+      href: "https://www.linkedin.com/in/marissa-gill-006231369/"
+    - icon: github
+      text: Github
+      href: https://github.com/mmakigill 
 ---
 
-:::{.container}
-<div class="profile-container">
-  <img src="images/profile_pic.jpg" class="circular-img" width="200px" alt="Profile photo" />
-  <div>
-    Welcome to my website! My name is Marissa Gill and I am an undergraduate student at the University of California, Santa Barbara.  
-    I am currently pursuing degrees in both Hydrologic Science and Policy, and Geography with an Emphasis in Geographic Information Systems (GIS).
-  </div>
-</div>
+Welcome to my website! My name is Marissa Gill and I am an undergraduate student at the University of California, Santa Barbara. I am currently pursuing degrees in both Hydrologic Science and Policy, and Geography with an Emphasis in Geographic Information Systems (GIS).
 
 :::{=html}
 

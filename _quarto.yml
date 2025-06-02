@@ -6,7 +6,7 @@ website:
   title: "Marissa Gill"
   navbar:
     logo: images/Marissa_Logo.png
-    background: secondary
+    search: true
     right:
       - href: index.qmd
         text: Home
@@ -23,7 +23,8 @@ website:
 
 format:
   html:
-    theme: minty
+    theme: 
+    - style.css
     fontawesome: true
     css: styles.css
     toc: true
