@@ -4,7 +4,7 @@ page-layout: full
 ---
 
 :::{.container}
-<div style="display: flex; justify-content: space-between; align-items: center; gap: 2rem;">
+<div class="profile-container">
   <img src="images/profile_pic.jpg" class="circular-img" width="200px" alt="Profile photo" />
   <div>
     Welcome to my website! My name is Marissa Gill and I am an undergraduate student at the University of California, Santa Barbara.  

@@ -73,3 +73,19 @@ body {
 body {
   font-family: 'Merriweather', serif;
 }
+
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  font-family: 'Merriweather', serif;
+}
+
+.container, .container * {
+  font-family: 'Merriweather', serif;
+}
+
+.navbar {
+  font-family: 'Merriweather', serif;
+}
