@@ -28,3 +28,17 @@ iframe {
   height: auto;
   width: auto;
 }
+
+a {
+  color: #555;  /* gray */
+}
+
+a:hover {
+  color: #333;  /* darker gray on hover */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+body {
+  font-family: 'Merriweather', serif;
+}

@@ -13,4 +13,7 @@ about:
 
 ------------------------------------------------------------------------
 
-#### This page will include an about me with my interests, hobbies, extracurriculars, and skills.
+## About Me
+
+My academic interests include water policy and management and the application of GIS to solve real-world environmental issues. I’m currently working on a project that maps climate change impacts on groundwater aquifers across California. I'm also gaining hands-on experience with tools like ArcGIS, QGIS, R, and Python.
+

@@ -1,6 +1,7 @@
 ---
-title: "Resume"
-format: html
+format:
+  html:
+    css: styles.education.css
 page-layout: full
 ---
 

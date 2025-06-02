@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "Welcome to my website! My name is Marissa Gill and I am a second-year student at the University of California, Santa Barbara. I am currently pursuing degrees in both Hydrologic Science and Policy, and Geography with an Emphasis in Geographic Information Systems (GIS)."
+    "text": "Welcome to my website! My name is Marissa Gill and I am a undergraduate student at the University of California, Santa Barbara. I am currently pursuing degrees in both Hydrologic Science and Policy, and Geography with an Emphasis in Geographic Information Systems (GIS)."
   },
   {
     "objectID": "about.html",
@@ -16,7 +16,7 @@
   {
     "objectID": "education.html",
     "href": "education.html",
-    "title": "Resume",
+    "title": "Marissa Gill",
     "section": "",
     "text": "Download My Resume Here"
   },
@@ -89,5 +89,12 @@
     "title": "GIS Portfolio",
     "section": "Mission Creek Watershed Delineation",
     "text": "Mission Creek Watershed Delineation"
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "About",
+    "section": "About Me",
+    "text": "About Me\nMy academic interests include water policy and management and the application of GIS to solve real-world environmental issues. I’m currently working on a project that maps climate change impacts on groundwater aquifers across California. I’m also gaining hands-on experience with tools like ArcGIS, QGIS, R, and Python."
   }
 ]
