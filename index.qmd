@@ -1,8 +1,9 @@
 ---
 title: "Home"
+page-layout: full
 image: images/profile_pic.jpg
 theme: 
-  - style.css
+  - style.scss
 
 about:
   template: solana
