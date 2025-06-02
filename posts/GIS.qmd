@@ -3,17 +3,6 @@ title: "GIS Portfolio"
 format: html
 ---
 
-
-
-
-
-
-
-
-
-
-
-
 <!--more-->
 
 # Coastal Erosion and Impervious Surface
@@ -28,9 +17,4 @@ format: html
 </div>
 ```
 
-
-
-
-
 ## Mission Creek Watershed Delineation
-

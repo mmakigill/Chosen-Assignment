@@ -3,5 +3,40 @@ title: "Home"
 page-layout: full
 ---
 
+:::{.container}
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 2rem;">
+  <img src="images/profile_pic.jpg" class="circular-img" width="200px" alt="Profile photo" />
+  <div>
+    Welcome to my website! My name is Marissa Gill and I am an undergraduate student at the University of California, Santa Barbara.  
+    I am currently pursuing degrees in both Hydrologic Science and Policy, and Geography with an Emphasis in Geographic Information Systems (GIS).
+  </div>
+</div>
 
-Welcome to my website! My name is Marissa Gill and I am a undergraduate student at the University of California, Santa Barbara. I am currently pursuing degrees in both Hydrologic Science and Policy, and Geography with an Emphasis in Geographic Information Systems (GIS).
+:::{=html}
+
+# Welcome to My Website
+
+:::{.cards-grid}
+<div class="card">
+  <h3>📚 Projects</h3>
+  <p>See my GIS and water policy work.</p>
+  <a href="projects.qmd">View Projects</a>
+</div>
+<div class="card">
+  <h3>🌊 Why Water?</h3>
+  <p>Learn why I study hydrology and surface water.</p>
+  <a href="whywater.qmd">Read More Here</a>
+</div>
+<div class="card">
+  <h3>🎓 Education and Experience</h3>
+  <p>My academic background and coursework.</p>
+  <a href="education.qmd">See Experience</a>
+</div>
+<div class="card">
+  <h3>About Me</h3>
+  <p>See my GIS and water policy work.</p>
+  <a href="about.qmd">Learn More About Me</a>
+</div>
+:::{=html}
+
+
