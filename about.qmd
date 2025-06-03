@@ -1,5 +1,8 @@
 ---
-title: "About"
+title: "About Me"
+toc: false
+page-layout: full
+about: marquee
 filters:
   - lightbox
 lightbox:
@@ -7,7 +10,6 @@ lightbox:
   effect: fade
   desc-position: bottom
   loop: true
-about: marquee
 ---
 
 ------------------------------------------------------------------------
@@ -24,4 +26,14 @@ about: marquee
 ![](images/bren_hydro.jpg){.square-img group="aa" description="Executive team of the Hydrology Club at UCSB presenting at the 55th Bren Hall Anniversary to faculty and alumni, Spring 2025."}
 :::
 
-My academic interests include water policy and management and the application of GIS to solve real-world environmental issues. I’m currently working on a project that maps climate change impacts on groundwater aquifers across California. I'm also gaining hands-on experience with tools like ArcGIS, QGIS, R, and Python.
+# Academic Interests
+
+My academic interests include water policy and management, watershed dynamics and the application of GIS to address environmental challenges in a visual way. I'm also gaining hands-on experience with tools like Microsoft Excel, ArcGIS, and R.
+
+# Campus Involvement
+
+I am actively involved in the Hydrology club at UCSB, and serve as both treasurer and secretary on the Executive board. As a cofounder of the club in 2023 I work with the team to organize water-related events and connect with professionals in the field of hydrology on and off campus.
+
+# Outside the Classroom
+
+In my personal time I love cooking new recipes and eating healthy and fufilling meals. I also love nature and dabble in landscape photography, especially since attending school near the ocean. I also love animals and on a free weekend like to visit the Santa Barbara Humane Society to adopt a dog and spoil them for the day!
