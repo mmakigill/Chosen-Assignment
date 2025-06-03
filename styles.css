@@ -105,5 +105,12 @@ body {
   color: #091016 !important;
 }
 
-$body-bg: #e7e3dd;
+
+.square-img {
+  width: 300px;         /* or another consistent size like 250px */
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;   /* optional: rounds corners */
+}
 

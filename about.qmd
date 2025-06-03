@@ -1,8 +1,27 @@
 ---
 title: "About"
+filters:
+  - lightbox
+lightbox:
+  match: auto
+  effect: fade
+  desc-position: bottom
+  loop: true
 about: marquee
 ---
 
 ------------------------------------------------------------------------
+
+::: {layout="[[1, 1, 1, 1, 1]]"}
+![](images/me_and_chico.png){.square-img group="aa" description="My dog and I at the beach, Spring 2024."}
+
+![](images/cook_curry.jpg){.square-img group="aa" description="Chicken coconut curry with vegetables and rice."}
+
+![](images/mexico.jpg){.square-img group="aa" description="Photograph from a boat in Puerto Vallarta Mexico, Fall 2022."}
+
+![](images/dog_walk.png){.square-img group="aa" description="Volunteering with the Santa Barbara Humane Shelter, taking a rescue out of the shelter for the day and on a walk."} 
+
+![](images/bren_hydro.jpg){.square-img group="aa" description="Executive team of the Hydrology Club at UCSB presenting at the 55th Bren Hall Anniversary to faculty and alumni, Spring 2025."}
+:::
 
 My academic interests include water policy and management and the application of GIS to solve real-world environmental issues. I’m currently working on a project that maps climate change impacts on groundwater aquifers across California. I'm also gaining hands-on experience with tools like ArcGIS, QGIS, R, and Python.
