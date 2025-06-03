@@ -21,16 +21,16 @@ lightbox:
 
 ![](images/mexico.jpg){.square-img group="aa" description="Photograph from a boat in Puerto Vallarta Mexico, Fall 2022."}
 
-![](images/dog_walk.png){.square-img group="aa" description="Volunteering with the Santa Barbara Humane Shelter, taking a rescue out of the shelter for the day and on a walk."} 
+![](images/dog_walk.png){.square-img group="aa" description="Volunteering with the Santa Barbara Humane Shelter, taking a rescue out of the shelter for the day and on a walk."}
 
 ![](images/bren_hydro.jpg){.square-img group="aa" description="Executive team of the Hydrology Club at UCSB presenting at the 55th Bren Hall Anniversary to faculty and alumni, Spring 2025."}
 :::
 
-# Academic Interests
+## Academic Interests
 
 My academic interests include water policy and management, watershed dynamics and the application of GIS to address environmental challenges in a visual way. I'm also gaining hands-on experience with tools like Microsoft Excel, ArcGIS, and R.
 
-# Campus Involvement
+## Campus Involvement
 
 I am actively involved in the Hydrology club at UCSB, and serve as both treasurer and secretary on the Executive board. As a cofounder of the club in 2023 I work with the team to organize water-related events and connect with professionals in the field of hydrology on and off campus.
 
