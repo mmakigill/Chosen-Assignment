@@ -1,9 +1,7 @@
 ---
-title: "Data Science Portfolio"
+title: "The Water Footprint of Our Dietary Choices; A Statistical Analysis"
 format: html
 ---
-
-Data Science
 
 The Water Footprint of Our Dietary Choices
 

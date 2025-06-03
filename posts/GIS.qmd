@@ -1,11 +1,18 @@
 ---
-title: "GIS Portfolio"
+title: "Coastal Erosion on the Southern California Coast"
 format: html
+categories: [GIS, Storymap]
+description: "This project explores how GIS tools can be used to map and analyze coastal erosion along the Southern California Coast."
+author:
+  - name: Marissa Gill, Phoebe Mennis, Madison Conrad, Katherine Schares, Sean Shruhan,
+---
+
+![](/images/Mission_beach_Development.png)
 ---
 
 <!--more-->
 
-# Coastal Erosion and Impervious Surface
+[[View Full Storymap from ArcGIS Online Here](https://storymaps.arcgis.com/stories/32f44c8c295a409c8da2746421e5bbff)]{.btn .btn-primary}
 
 ```{=html}
 <div class="responsive-iframe">
@@ -16,5 +23,3 @@ format: html
   </iframe>
 </div>
 ```
-
-## Mission Creek Watershed Delineation

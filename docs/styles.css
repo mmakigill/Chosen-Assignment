@@ -114,3 +114,18 @@ body {
   border-radius: 8px;   /* optional: rounds corners */
 }
 
+.btn.btn-primary {
+  background-color: #9ab4d0;  
+  border-color: #6c757d;       /* Gray border */
+  color: white;                /* Text color */
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
+.btn.btn-primary:active {
+  background-color: #2b4967;   /* Darker gray on hover */
+  color: white;                /* Keep text white */
+  box-shadow: none;            /* Remove blue glow */
+  outline: none;               /* Remove outline */
+  text-decoration: none;       /* Prevent underline */
+}
