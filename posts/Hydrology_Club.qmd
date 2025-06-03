@@ -2,4 +2,8 @@
 title: "Building a Hydro Community on Campus"
 format: html
 categories: [Campus Involvement, Hydrology]
+description: "Founding a club to foster community and oppurtunities for like-minded students interedted in water."
+image: "/images/Hydro_logo.png"
 ---
+
+

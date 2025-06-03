@@ -3,10 +3,10 @@ title: "The Isla Vista Community's Perception of Water Quality and Water Managem
 format: html
 page-layout: full
 categories: [Research Paper, Hydrology]
-description: "This paper addresses the water quality and management concerns of the Isla Vista community, and documents my process performing qualitative research"
+description: "This paper addresses the water quality and management concerns of the Isla Vista community, and documents my process performing qualitative research."
+image: "/images/Isla_Vista_Water.png"
 ---
 
-![](/images/Isla_Vista_Water.png)
 
 <!--more-->
 

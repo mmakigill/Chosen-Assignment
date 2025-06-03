@@ -32,7 +32,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Building a Hydro Community on Campus\n\n\n\nCampus Involvement\n\n\nHydrology\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCoastal Erosion on the Southern California Coast\n\n\n\nGIS\n\n\nStorymap\n\n\n\nThis…\n\n\n\nMarissa Gill, Phoebe Mennis, Madison Conrad, Katherine Schares, Sean Shruhan,\n\n\n\n\n\n\n\n\n\n\n\n\nThe Isla Vista Community’s Perception of Water Quality and Water Management\n\n\n\nResearch Paper\n\n\nHydrology\n\n\n\nThis…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Water Footprint of Our Dietary Choices; A Statistical Analysis\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Building a Hydro Community on Campus\n\n\n\nCampus Involvement\n\n\nHydrology\n\n\n\nFounding a club to foster community and oppurtunities for like-minded students interedted in water.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCoastal Erosion on the Southern California Coast\n\n\n\nGIS\n\n\nStorymap\n\n\n\nThis project explores how GIS tools can be used to map and analyze coastal erosion along the Southern California Coast.\n\n\n\nMarissa Gill, Phoebe Mennis, Madison Conrad, Katherine Schares, Sean Shruhan,\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSupplemental Technical Work\n\n\n\nGIS\n\n\nData Science\n\n\nHydrology\n\n\nMicrosoft Excel\n\n\n\nAdditional coursework examples of skills I am building.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Isla Vista Community’s Perception of Water Quality and Water Management\n\n\n\nResearch Paper\n\n\nHydrology\n\n\n\nThis paper addresses the water quality and management concerns of the Isla Vista community, and documents my process performing qualitative research.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Water Footprint of Our Dietary Choices; A Statistical Analysis\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects.html#coastal-erosion-and-impervious-surface",
@@ -96,5 +96,40 @@
     "title": "About",
     "section": "About Me",
     "text": "About Me\nMy academic interests include water policy and management and the application of GIS to solve real-world environmental issues. I’m currently working on a project that maps climate change impacts on groundwater aquifers across California. I’m also gaining hands-on experience with tools like ArcGIS, QGIS, R, and Python."
+  },
+  {
+    "objectID": "posts/GIS.html#section",
+    "href": "posts/GIS.html#section",
+    "title": "Coastal Erosion on the Southern California Coast",
+    "section": "",
+    "text": "View Full Storymap from ArcGIS Online Here"
+  },
+  {
+    "objectID": "posts/Hydrology_Data.html",
+    "href": "posts/Hydrology_Data.html",
+    "title": "Supplemental Technical Work",
+    "section": "",
+    "text": "“Example assignment using RStudio to analyze datasets.”"
+  },
+  {
+    "objectID": "posts/Hydrology_Data.html#data-science-skills",
+    "href": "posts/Hydrology_Data.html#data-science-skills",
+    "title": "Supplemental Technical Work",
+    "section": "Data Science Skills",
+    "text": "Data Science Skills\n\nExample assignment using RStudio to analyze datasets."
+  },
+  {
+    "objectID": "posts/Hydrology_Data.html#gis-skills",
+    "href": "posts/Hydrology_Data.html#gis-skills",
+    "title": "Supplemental Technical Work",
+    "section": "GIS Skills",
+    "text": "GIS Skills\n\nFull spatial and statistical analysis of solar installations in the United States. Question 8 demonstrates ability to synthesize the data into a clear explanation of which socioeconomic and technical variables are most strongly associated with distributed PV adoption, how each variable correlates with installation rates, and what limitations arise due to spatial autocorrelation in the residuals — highlighting that while the model identifies key predictors like EP_MINRTY and EP_NOHSDP, it may still miss important spatial factors influencing adoption patterns.\n\n\n\nExperience using ModelBuilder in ArcGIS Pro to perform spatial analysis."
+  },
+  {
+    "objectID": "posts/Hydrology_Data.html#hydrology-skills",
+    "href": "posts/Hydrology_Data.html#hydrology-skills",
+    "title": "Supplemental Technical Work",
+    "section": "Hydrology Skills",
+    "text": "Hydrology Skills\n\nExperience using Microsoft Excel to create Hydrographs, Rating Curves, Calculate discharge, Calculate recurrence intervals, and create Flood Frequency Curves."
   }
 ]
