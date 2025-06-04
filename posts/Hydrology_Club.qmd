@@ -6,6 +6,10 @@ description: "Founding a club to foster community and oppurtunities for like-min
 image: "/images/Hydro_logo.png"
 ---
 
+[![Follow the Hydro Club on Instagram](https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png){style="vertical-align: middle; width: 24px; margin-right: 8px;"} **Follow @ucsbhydro**](https://www.instagram.com/ucsbhydro?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==){.button}
+
+
+
 ## Our Story
 
 ### The Timeline
@@ -18,40 +22,36 @@ Fall 2024: Registered as official RCO and boost recruitment at the Campus Organi
 
 Spring 2025: Currently we are brainstorming water quality research project with Kelly Garvey
 
-
-
 ## What We Do
 
-- Advise current and new Hydro Majors through schedule-building and professional workshops
-- Build a water-loving community at UCSB through outreach as an official Registered Campus Organization
-- Collaborate with faculty, graduate students and the ES Department to present areas of study and opportunities in hydrology to our undergraduate members.
+-   Advise current and new Hydro Majors through schedule-building and professional workshops
+-   Build a water-loving community at UCSB through outreach as an official Registered Campus Organization
+-   Collaborate with faculty, graduate students and the ES Department to present areas of study and opportunities in hydrology to our undergraduate members.
 
 ## Some of Our Events!
 
 ::: {layout="[[1, 1, 1]]"}
 
-![](/images/Skill_Build.jpg){.square-img group="aa"}
-![](/images/AGU.jpg){.square-img group="aa"}
+![](/images/Skill_Build.jpg){.square-img group="aa"} 
+
+![](/images/AGU.jpg){.square-img group="aa"} 
+
 ![](/images/Hot_Topics.jpg){.square-img group="aa"}
 
 :::
 
 ### Other Events and Opportunities throught the club:
 
-- CCBER- guided field trip to NCOS 
-- Attend ES hydrology faculty search talks
-- Resume Building Workshop
-- Attend mock-AGU talks by Bren Graduate students coordinated by Dr. Perrone
-- Taking a UCWA Seminar Class as a Club
-- Meeting with Bren-ES Fellows and Dr. James Salzman
-- Club hike to Lake Cachuma
+-   CCBER- guided field trip to NCOS
+-   Attend ES hydrology faculty search talks
+-   Resume Building Workshop
+-   Attend mock-AGU talks by Bren Graduate students coordinated by Dr. Perrone
+-   Taking a UCWA Seminar Class as a Club
+-   Meeting with Bren-ES Fellows and Dr. James Salzman
+-   Club hike to Lake Cachuma
 
 ### 2025-2026 School Year Outlook
 
-1. Isla Vista Water Quality Project - publish scientific literature on behalf of the club, give undergraduates the opportunity to gain fieldwork and research skills
+1.  Isla Vista Water Quality Project - publish scientific literature on behalf of the club, give undergraduates the opportunity to gain fieldwork and research skills
 
-2. Ray-Taber Foundation Drill Day Fieldtrip at CSU Fresno - provide club members with firsthand experience of groundwater drilling
- 
-
-
-
+2.  Ray-Taber Foundation Drill Day Fieldtrip at CSU Fresno - provide club members with firsthand experience of groundwater drilling

@@ -1,8 +1,9 @@
+/*-- scss:defaults --*/
 
 // Import font
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
-// Color variables
+// Colors 
 $baby-blue: #E6F1FA;
 $arapawa: #2b4967;
 $darkash: #091016;
@@ -17,3 +18,73 @@ $navbar-hl: $darkash;
 $body-bg: $cream;
 $body-color: $arapawa;
 $link-color: $poloblue;
+
+
+/*-- scss:rules --*/
+
+.quarto-listing .thumbnail img {
+  object-fit: cover;
+  aspect-ratio: 4/3;
+  height: 190px;
+}
+
+.square-img {
+  width: 300px;         /* or another consistent size like 250px */
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;   /* optional: rounds corners */
+}
+
+.navbar-brand img {
+  max-height: 100px !important; /* Adjust to desired height */
+  height: auto;
+  width: auto;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card {
+  border: 1px solid #9ab4d0;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #9ab4d0;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: 'Merriweather', serif;
+}
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
+.btn.btn-primary:active {
+  background-color: #2b4967;   /* Darker gray on hover */
+  color: white;                /* Keep text white */
+  box-shadow: none;            /* Remove blue glow */
+  outline: none;               /* Remove outline */
+  text-decoration: none;       /* Prevent underline */
+}
+
+.responsive-iframe {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+

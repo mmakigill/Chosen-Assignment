@@ -24,10 +24,9 @@ website:
 format:
   html:
     theme: 
-    - style.css
-    fontawesome: true
+    - styles.scss
     css: styles.css
+    page-layout: full
     toc: true
-
 editor: visual
 
