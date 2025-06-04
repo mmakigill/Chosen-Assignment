@@ -57,6 +57,13 @@ $link-color: $poloblue;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
 }
 
+.card-link {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
 body {
   font-family: 'Merriweather', serif;
 }
@@ -70,6 +77,16 @@ body {
   outline: none;               /* Remove outline */
   text-decoration: none;       /* Prevent underline */
 }
+
+.btn.btn-primary {
+  background-color: #2b4967; /* Or another color matching your theme */
+  color: white;
+  border: none;              /* Optional: removes border */
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;        /* Optional: consistent with rounded design */
+}
+
 
 .responsive-iframe {
   position: relative;
@@ -87,4 +104,6 @@ body {
   height: 100%;
   border: 0;
 }
+
+
 

@@ -5,7 +5,7 @@ categories: [GIS, Storymap]
 description: "This project explores how GIS tools can be used to map and analyze coastal erosion along the Southern California Coast."
 image: "/images/Mission_beach_Development.png"
 author:
-  - name: Marissa Gill, Phoebe Mennis, Madison Conrad, Katherine Schares, Sean Shruhan,
+  - name: Marissa Gill, Phoebe Mennis, Madison Conrad, Katherine Schares, Sean Shruhan
 ---
 
 <!--more-->

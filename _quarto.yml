@@ -24,6 +24,7 @@ website:
 format:
   html:
     theme: 
+    - default
     - styles.scss
     css: styles.css
     page-layout: full

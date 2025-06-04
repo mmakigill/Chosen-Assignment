@@ -1,9 +1,10 @@
 ---
 title: "The Water Footprint of Our Dietary Choices; A Statistical Analysis"
 format: html
+categories: [Data Science, Research]
 ---
 
-[GitHub Repository](https://github.com/mmakigill/ENVS-193_homework-3.git)
+[Access My GitHub Repository](https://github.com/mmakigill/ENVS-193_homework-3.git)
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
@@ -11,15 +12,14 @@ knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
 
 ### *Collecting the Data*
 
-a. Research Question: Does eating more plant-based meals reduce my daily water footprint?
-b. Response Variable: estimated water used to produce the meal I eat
-c. Predictor Variable: meal type (vegan, vegetarian, meat-based, pescatarian)
-d. Time Variables: date and meal (breakfast, lunch, dinner)
-e. Additional Variable: food group, amount/ portion size, packaging type, leftover potential
-f. Units: daily water footprint: (quantitative, gallons) meal type: (categorical, “vegetarian wtc.”), date: (date, YYYY-MM-DD) meal time: (categorical, breakfast etc.) food group: (categorical, legumes/protein etc.) amount/portion: (categoriacal, sm/m/L) packaging type: (categorical, fresh/plastic/box/fast food etc.)
-g. Sources: self report, water footprint calculator (https://watercalculator.org/water-footprint-of-food-guide/), meal tracker
-h. When: after eating each meal/snack, total up at end of day
-
+a.  Research Question: Does eating more plant-based meals reduce my daily water footprint?
+b.  Response Variable: estimated water used to produce the meal I eat
+c.  Predictor Variable: meal type (vegan, vegetarian, meat-based, pescatarian)
+d.  Time Variables: date and meal (breakfast, lunch, dinner)
+e.  Additional Variable: food group, amount/ portion size, packaging type, leftover potential
+f.  Units: daily water footprint: (quantitative, gallons) meal type: (categorical, “vegetarian wtc.”), date: (date, YYYY-MM-DD) meal time: (categorical, breakfast etc.) food group: (categorical, legumes/protein etc.) amount/portion: (categoriacal, sm/m/L) packaging type: (categorical, fresh/plastic/box/fast food etc.)
+g.  Sources: self report, water footprint calculator (https://watercalculator.org/water-footprint-of-food-guide/), meal tracker
+h.  When: after eating each meal/snack, total up at end of day
 
 ## Set Up
 
@@ -35,7 +35,6 @@ library(readr)
 Meal_Data <- read_csv("~/Chosen-Assignment/ENVS193_MyData.csv") # Read in and store collected water footprint per meal data
 
 ```
-
 
 ### *Data Analysis*
 
