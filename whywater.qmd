@@ -1,7 +1,33 @@
 ---
-title: "Why Water?"
 format: html
 page-layout: full
+filters:
+  - lightbox
+lightbox:
+  match: auto
+  effect: fade
+  desc-position: bottom
+  loop: true
 ---
 
-##### This page will include a memo about how I gained interest in my majors/ career paths, and how I am applying what I am learning in the classroom to the broader fields of geography and hydrology.
+![](images/American_River.png){width="450" group="aa" description="The American River Confluence, taken on Iphone 2022."}
+
+## My Introduction to Water:
+
+I grew up in Northern California, five minutes from the American River and surrounded by surface water. I was privileged to live near an abundance of these natural water sources where I could enjoy their beauty recreationally every weekend, and drink pristine water straight from the tap.
+
+Although I have always been passionate about environmental conservation and justice, this background inspired my studies and pursuit of a career that provides and maintains accessibility to clean water resources for all communities.
+
+![](images/ClementineLake.png){width="441" group="aa" description="Lake Clementine, taken on iphone 2020."}
+
+## So Why Water?
+
+Water is a political and often overlooked topic, however it shapes nearly every aspect of our daily lives, from the food we eat to the ecosystems we depend on. Despite its importance, water is frequently mismanaged, especially in the face of climate change. From ecosystems to irrigation, much of our world is reliant on the steady flow of water, particularly freshwater, that structures our world. However necessary this resource, the management of water has a history of corruption and malpractice, with the threat of critical failure in this regard rising higher in the face of climate change.
+
+Broader patterns of environmental injustice are also rooted in water through issues such as groundwater overdraft, contamination, and inequitable access to clean drinking water. These impacts threaten rural and agricultural communities, lacking the political power and infrastructure funding to address the problems.
+
+Beyond human use, water sustains rich, dynamic ecosystems. Healthy aquatic environments regulate nutrient cycling and buffer flood events in surface waters. When these systems are degraded the impacts affect all domains of life. Understanding water not just as a resource, but as a living system, is crucial for sustainable management.
+
+My academic focus in hydrology and geography is driven by a desire to protect both people and the ecosystems that rely on water. As I complete my education I hope to contribute to more equitable and ecologically sound water management practices.
+
+![](images/Tahoe.jpg){width="539" group="aa" description="Lake Tahoe, taken on Canon EOS Rebel T6, 2021."}
