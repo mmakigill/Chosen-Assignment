@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -66,6 +100,8 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="../site_libs/tabwid-1.1.3/tabwid.css" rel="stylesheet">
+<script src="../site_libs/tabwid-1.1.3/tabwid.js"></script>
 
 
 <link rel="stylesheet" href="../styles.css">
@@ -122,8 +158,19 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#collecting-the-data" id="toc-collecting-the-data" class="nav-link active" data-scroll-target="#collecting-the-data"><em>Collecting the Data</em></a></li>
+  <li><a href="#set-up" id="toc-set-up" class="nav-link" data-scroll-target="#set-up">Set Up</a>
+  <ul class="collapse">
+  <li><a href="#data-analysis" id="toc-data-analysis" class="nav-link" data-scroll-target="#data-analysis"><em>Data Analysis</em></a></li>
+  <li><a href="#affective-visualization" id="toc-affective-visualization" class="nav-link" data-scroll-target="#affective-visualization"><em>Affective Visualization</em></a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -147,10 +194,97 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>The Water Footprint of Our Dietary Choices</p>
-<p>This section will include my research about the water footprint of each meal I eat, with code for a histogram and the output, and writing about what the experiment entails.</p>
+<p><a href="https://github.com/mmakigill/ENVS-193_homework-3.git">GitHub Repository</a></p>
+<section id="collecting-the-data" class="level3">
+<h3 class="anchored" data-anchor-id="collecting-the-data"><em>Collecting the Data</em></h3>
+<ol type="a">
+<li>Research Question: Does eating more plant-based meals reduce my daily water footprint?</li>
+<li>Response Variable: estimated water used to produce the meal I eat</li>
+<li>Predictor Variable: meal type (vegan, vegetarian, meat-based, pescatarian)</li>
+<li>Time Variables: date and meal (breakfast, lunch, dinner)</li>
+<li>Additional Variable: food group, amount/ portion size, packaging type, leftover potential</li>
+<li>Units: daily water footprint: (quantitative, gallons) meal type: (categorical, “vegetarian wtc.”), date: (date, YYYY-MM-DD) meal time: (categorical, breakfast etc.) food group: (categorical, legumes/protein etc.) amount/portion: (categoriacal, sm/m/L) packaging type: (categorical, fresh/plastic/box/fast food etc.)</li>
+<li>Sources: self report, water footprint calculator (https://watercalculator.org/water-footprint-of-food-guide/), meal tracker</li>
+<li>When: after eating each meal/snack, total up at end of day</li>
+</ol>
+</section>
+<section id="set-up" class="level2">
+<h2 class="anchored" data-anchor-id="set-up">Set Up</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse) <span class="co"># Load packages</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(flextable)       </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)  </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>Meal_Data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"~/Chosen-Assignment/ENVS193_MyData.csv"</span>) <span class="co"># Read in and store collected water footprint per meal data</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="data-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="data-analysis"><em>Data Analysis</em></h3>
+<p><strong>[A]</strong> To compare my response variable and it’s fluctuation between categories in my data, I could calculate the mean water footprint in gallons for each meal type (omnivore, vegetarian etc.) to compare the impact of different dietary choices on water use. Different diets include foods with varying water demands (meat vs.&nbsp;vegetables), which will provide an informative comparison of how food choices could reduce overall daily water consumption.</p>
+<section id="creating-a-visualization" class="level4">
+<h4 class="anchored" data-anchor-id="creating-a-visualization"><strong>Creating a Visualization</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the plot to visualize Water_Footprint by Meal_Type</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Meal_Data, <span class="fu">aes</span>(<span class="at">x =</span> Meal_Type, <span class="at">y =</span> Water_Footprint, <span class="at">fill =</span> Meal_Type)) <span class="sc">+</span>  </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">width =</span> <span class="fl">0.2</span>, <span class="at">shape =</span> <span class="dv">21</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">size =</span> <span class="dv">2</span>, <span class="at">alpha =</span> <span class="fl">0.6</span>) <span class="sc">+</span>  <span class="co"># show individual data points</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_summary</span>(<span class="at">fun =</span> mean, <span class="at">geom =</span> <span class="st">"bar"</span>, <span class="at">width =</span> <span class="fl">0.5</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">position =</span> <span class="fu">position_dodge</span>(<span class="fl">0.9</span>)) <span class="sc">+</span> <span class="co"># calculates summary statistics</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Omnivore"</span> <span class="ot">=</span> <span class="st">"Brown"</span>, </span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Vegetarian"</span> <span class="ot">=</span> <span class="st">"Dark Green"</span>, </span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Vegan"</span> <span class="ot">=</span> <span class="st">"Light Blue"</span>, </span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Pescatarian"</span> <span class="ot">=</span> <span class="st">"Coral"</span>, </span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Carnivore"</span> <span class="ot">=</span> <span class="st">"Red"</span>)) <span class="sc">+</span> <span class="co"># specify colors for each Meal_Type category</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>( <span class="co"># Add labels and title to the plot</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Mean Water Footprint by Meal Type"</span>,</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Meal Type"</span>,</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Water Footprint (gallons)"</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">14</span>) <span class="sc">+</span> <span class="co"># Use a minimal theme</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>) <span class="co"># Removes legend</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="DATA_SCI_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Figure 1.</strong> This chart displays the mean water footprint (in gallons) for different diets (Carnivore, Omnivore, Pescatarian, Vegan, Vegetarian), with individual meal data displayed as jittered points. In the chart, omnivore and carnivore meals generally have the highest average water footprint, while vegetarian and pescatarian meals tend to have the lowest.</p>
+</section>
+<section id="creating-a-summary-table" class="level4">
+<h4 class="anchored" data-anchor-id="creating-a-summary-table"><strong>Creating a Summary Table</strong></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create summary table</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a> summary_table <span class="ot">&lt;-</span> Meal_Data <span class="sc">|&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">group_by</span>(Meal_Type) <span class="sc">|&gt;</span> <span class="co"># Group dataset by meal type</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">summarize</span>(<span class="at">mean_water_footprint =</span> <span class="fu">round</span>(<span class="fu">mean</span>(Water_Footprint), <span class="dv">1</span>)) <span class="co"># Calculate the mean water footprint rounded to 1 decimal place</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Create flextable</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a> <span class="fu">flextable</span>(summary_table) <span class="sc">|&gt;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>   <span class="fu">set_header_labels</span>(</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>     <span class="at">meal_type =</span> <span class="st">"Meal Type"</span>, <span class="co"># Column header</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>     <span class="at">mean_water_footprint =</span> <span class="st">"Mean Water Footprint (gallons)"</span> <span class="co"># Column header</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>   ) <span class="sc">|&gt;</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>   <span class="fu">autofit</span>() <span class="co"># Adjusts column widths</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="tabwid"><style>.cl-dfeae794{}.cl-dfe4d39a{font-family:'DejaVu Sans';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-dfe769c0{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-dfe769ca{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-dfe7863a{width:1.178in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-dfe78644{width:2.667in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-dfe7864e{width:1.178in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-dfe78658{width:2.667in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-dfe78659{width:1.178in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-dfe78662{width:2.667in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-dfe7866c{width:1.178in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-dfe78676{width:2.667in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-dfeae794"><thead><tr style="overflow-wrap:break-word;"><th class="cl-dfe7863a"><p class="cl-dfe769c0"><span class="cl-dfe4d39a">Meal_Type</span></p></th><th class="cl-dfe78644"><p class="cl-dfe769ca"><span class="cl-dfe4d39a">Mean Water Footprint (gallons)</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-dfe7864e"><p class="cl-dfe769c0"><span class="cl-dfe4d39a">Carnivore</span></p></td><td class="cl-dfe78658"><p class="cl-dfe769ca"><span class="cl-dfe4d39a">184.6</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-dfe7864e"><p class="cl-dfe769c0"><span class="cl-dfe4d39a">Omnivore</span></p></td><td class="cl-dfe78658"><p class="cl-dfe769ca"><span class="cl-dfe4d39a">179.0</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-dfe7864e"><p class="cl-dfe769c0"><span class="cl-dfe4d39a">Pescatarian</span></p></td><td class="cl-dfe78658"><p class="cl-dfe769ca"><span class="cl-dfe4d39a">108.0</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-dfe78659"><p class="cl-dfe769c0"><span class="cl-dfe4d39a">Vegan</span></p></td><td class="cl-dfe78662"><p class="cl-dfe769ca"><span class="cl-dfe4d39a">123.9</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-dfe7866c"><p class="cl-dfe769c0"><span class="cl-dfe4d39a">Vegetarian</span></p></td><td class="cl-dfe78676"><p class="cl-dfe769ca"><span class="cl-dfe4d39a">95.5</span></p></td></tr></tbody></table></div>
+</div>
+</div>
+</section>
+</section>
+<section id="affective-visualization" class="level3">
+<h3 class="anchored" data-anchor-id="affective-visualization"><em>Affective Visualization</em></h3>
+<p><strong>[A]</strong> An effective visualization for my data could include a drawing of plants to represent each meal type. The meals with the highest water footprints would be wilting and dry, while the meals with the lowest water footprints would be growing, green and healthy. This visualization could help to communicate the unseen impacts of our eating choices by representing how sustainable eating can support nature while resource depletion from agriculture and meal choices is unsustainable for our environment.</p>
+<p><strong>Visual Sketch</strong> <img src="../images/Project_Image.jpg" class="img-fluid"></p>
+<p><strong>Visual Draft</strong> <img src="../images/plant_viz_final-02.png" class="img-fluid"></p>
+<p><strong>Artist Statement:</strong></p>
+<p>This piece depicts the environmental impacts of my meals with a plant metaphor, where each type of meal I eat is represented by the growth of plants and the water availability in that environment. Meal types with higher average water footprints based on my study, are drawn wilted and depleted of nutrients in a desert, while those with lower water footprints are shown to grow tall and green in a meadow. Inspired by Lorraine Woodruff-Long’s warming strips quilt, where she uses art to convey a subtle but powerful message about climate change, I decided to also pursue a creative way to relate my data to the viewer. The form of my final work is an illustration drawn by hand, using both ink and colored pencils. My choice of an analog medium also stems from the physical connection we have to nature and how our environment is impacted by everyday choices. I started creating this work by collecting data on the meals I ate everyday throughout my test period, sorting each meal into categories and calculating their water footprints. After my data collection and analysis I sketched the meal types with the highest to lowest water footprints as flowers with varying degrees of health. I then refined the color palette and layout to create a desert to garden visual based on the meal impact.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

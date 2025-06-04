@@ -3,6 +3,94 @@ title: "The Water Footprint of Our Dietary Choices; A Statistical Analysis"
 format: html
 ---
 
-The Water Footprint of Our Dietary Choices
+[GitHub Repository](https://github.com/mmakigill/ENVS-193_homework-3.git)
 
-This section will include my research about the water footprint of each meal I eat, with code for a histogram and the output, and writing about what the experiment entails.
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+### *Collecting the Data*
+
+a. Research Question: Does eating more plant-based meals reduce my daily water footprint?
+b. Response Variable: estimated water used to produce the meal I eat
+c. Predictor Variable: meal type (vegan, vegetarian, meat-based, pescatarian)
+d. Time Variables: date and meal (breakfast, lunch, dinner)
+e. Additional Variable: food group, amount/ portion size, packaging type, leftover potential
+f. Units: daily water footprint: (quantitative, gallons) meal type: (categorical, “vegetarian wtc.”), date: (date, YYYY-MM-DD) meal time: (categorical, breakfast etc.) food group: (categorical, legumes/protein etc.) amount/portion: (categoriacal, sm/m/L) packaging type: (categorical, fresh/plastic/box/fast food etc.)
+g. Sources: self report, water footprint calculator (https://watercalculator.org/water-footprint-of-food-guide/), meal tracker
+h. When: after eating each meal/snack, total up at end of day
+
+
+## Set Up
+
+```{r libraries-and-data}
+
+library(tidyverse) # Load packages
+library(here)
+library(flextable)       
+library(janitor)  
+library(ggplot2)
+library(readr)
+
+Meal_Data <- read_csv("~/Chosen-Assignment/ENVS193_MyData.csv") # Read in and store collected water footprint per meal data
+
+```
+
+
+### *Data Analysis*
+
+**\[A\]** To compare my response variable and it's fluctuation between categories in my data, I could calculate the mean water footprint in gallons for each meal type (omnivore, vegetarian etc.) to compare the impact of different dietary choices on water use. Different diets include foods with varying water demands (meat vs. vegetables), which will provide an informative comparison of how food choices could reduce overall daily water consumption.
+
+#### **Creating a Visualization**
+
+```{r}
+
+# Create the plot to visualize Water_Footprint by Meal_Type
+ggplot(Meal_Data, aes(x = Meal_Type, y = Water_Footprint, fill = Meal_Type)) +  
+  geom_jitter(width = 0.2, shape = 21, color = "black", size = 2, alpha = 0.6) +  # show individual data points
+  stat_summary(fun = mean, geom = "bar", width = 0.5, color = "black", position = position_dodge(0.9)) + # calculates summary statistics
+  scale_fill_manual(values = c(
+    "Omnivore" = "Brown", 
+    "Vegetarian" = "Dark Green", 
+    "Vegan" = "Light Blue", 
+    "Pescatarian" = "Coral", 
+    "Carnivore" = "Red")) + # specify colors for each Meal_Type category
+  labs( # Add labels and title to the plot
+    title = "Mean Water Footprint by Meal Type",
+    x = "Meal Type",
+    y = "Water Footprint (gallons)"
+  ) +
+  theme_minimal(base_size = 14) + # Use a minimal theme
+  theme(legend.position = "none") # Removes legend
+```
+
+**Figure 1.** This chart displays the mean water footprint (in gallons) for different diets (Carnivore, Omnivore, Pescatarian, Vegan, Vegetarian), with individual meal data displayed as jittered points. In the chart, omnivore and carnivore meals generally have the highest average water footprint, while vegetarian and pescatarian meals tend to have the lowest.
+
+#### **Creating a Summary Table**
+
+```{r}
+# Create summary table
+ summary_table <- Meal_Data |>
+   group_by(Meal_Type) |> # Group dataset by meal type
+   summarize(mean_water_footprint = round(mean(Water_Footprint), 1)) # Calculate the mean water footprint rounded to 1 decimal place
+ 
+# Create flextable
+ flextable(summary_table) |>
+   set_header_labels(
+     meal_type = "Meal Type", # Column header
+     mean_water_footprint = "Mean Water Footprint (gallons)" # Column header
+   ) |>
+   autofit() # Adjusts column widths
+```
+
+### *Affective Visualization*
+
+**\[A\]** An effective visualization for my data could include a drawing of plants to represent each meal type. The meals with the highest water footprints would be wilting and dry, while the meals with the lowest water footprints would be growing, green and healthy. This visualization could help to communicate the unseen impacts of our eating choices by representing how sustainable eating can support nature while resource depletion from agriculture and meal choices is unsustainable for our environment.
+
+**Visual Sketch** ![](/images/Project_Image.jpg)
+
+**Visual Draft** ![](/images/plant_viz_final-02.png)
+
+**Artist Statement:**
+
+This piece depicts the environmental impacts of my meals with a plant metaphor, where each type of meal I eat is represented by the growth of plants and the water availability in that environment. Meal types with higher average water footprints based on my study, are drawn wilted and depleted of nutrients in a desert, while those with lower water footprints are shown to grow tall and green in a meadow. Inspired by Lorraine Woodruff-Long’s warming strips quilt, where she uses art to convey a subtle but powerful message about climate change, I decided to also pursue a creative way to relate my data to the viewer. The form of my final work is an illustration drawn by hand, using both ink and colored pencils. My choice of an analog medium also stems from the physical connection we have to nature and how our environment is impacted by everyday choices. I started creating this work by collecting data on the meals I ate everyday throughout my test period, sorting each meal into categories and calculating their water footprints. After my data collection and analysis I sketched the meal types with the highest to lowest water footprints as flowers with varying degrees of health. I then refined the color palette and layout to create a desert to garden visual based on the meal impact.
